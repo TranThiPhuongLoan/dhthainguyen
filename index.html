@@ -1,752 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Đại học Thái Nguyên</title>
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/variables.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/font.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/moving.css">
+
+  <!-- font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- sass -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js" integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header id="header">
+    <div class="container">
+      <div class="header--top">
+
+        <div class="header__cta">
+          <a class="phone" href="tel: 0914709118">
+            <svg style="color: white" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+              stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl"
+              height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span class="phone-number" style="color: white">0914709118</span>
+          </a>
+          <a class="mail" href="mailto:daihoctructruyen@tnu.edu.vn">
+            <svg style="color: white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+              focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" d="M0 0h24v24H0V0z"></path>
+              <path
+                d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 4.99L4 6h16zm0 12H4V8l8 5 8-5v10z">
+              </path>
+            </svg>
+            <span class="mail-text" style="color: white">daihoctructuyen@tnu.edu.vn</span>
+          </a>
+        </div>
+
+        <div class="header__logo">
+          <a href="/">
+            <img alt="Logo Đại học Thái Nguyên"
+              src="https://dhthainguyen.edu.vn/_ipx/w_96,q_75/%2Flogo-dhthainguyen.png?url=%2Flogo-dhthainguyen.png&w=96&q=75"
+              width="65" height="65" />
+            <div class="sub-logo">
+              <h1 class="school-name">Đại học Thái Nguyên</h1>
+              <h2 class="sub-name">Trung tâm đào tạo từ xa</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="header__search">
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+   
+
+    <hr aria-orientation="horizontal" class="borders" />
     
-    <style>
-      @font-face {
-        font-family: first-font;
-        src: url("fonts/static/Montserrat-Regular.ttf") format(truetype);
-        font-weight: normal;
-        font-style: normal;
-
-        /* font-family: 2nd-font; 
-        src: url("./fonts/static/Montserrat-Bold.ttf") format(truetype); 
-        font-weight:normal;
-        font-style:normal; */
-      }
-    </style>
-  </head>
-  <body>
-    <header id="header">
-      <!-- nav -->
-      <div class="container-header">
-        <div class="header-group">
-          <div class="contact-group">
-            <a class="phone" href="tel: 0914709118">
-              <svg
-                style="color: white"
-                stroke="currentColor"
-                fill="none"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                focusable="false"
-                class="chakra-icon css-13otjrl"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                ></path>
-              </svg>
-              <span class="phone-number" style="color: white">0914709118</span>
-            </a>
-            <a class="mail" href="mailto:daihoctructruyen@tnu.edu.vn">
-              <svg
-                style="color: white"
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 24 24"
-                focusable="false"
-                class="chakra-icon css-13otjrl"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                <path
-                  d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 4.99L4 6h16zm0 12H4V8l8 5 8-5v10z"
-                ></path>
-              </svg>
-              <span class="mail-text" style="color: white"
-                >daihoctructuyen@tnu.edu.vn</span
-              >
-            </a>
-          </div>
-          <div class="container-logo">
-            <a href="/">
-              <img
-                alt="Logo Đại học Thái Nguyên"
-                src="https://dhthainguyen.edu.vn/_ipx/w_96,q_75/%2Flogo-dhthainguyen.png?url=%2Flogo-dhthainguyen.png&w=96&q=75"
-                width="65"
-                height="65"
-              />
-              <div class="sub-logo">
-                <h1 class="school-name">Đại học Thái Nguyên</h1>
-                <h2 class="sub-name">Trung tâm đào tạo từ xa</h2>
-              </div>
-            </a>
-          </div>
-          <div class="container-searching">
-            <button type="submit">
-              <i class="fas fa-search"></i>
-            </button>
+    <header id="header--bottom">
+      <div class="container" >
+        <!-- navigation-header when small screen -->
+        <div class="navigation-header" style="color: black;">
+          <!-- burger-icon when small screen -->
+          <a href="#" class="burger-icon toggle-navbar burger-left">
+            <span></span><span></span><span></span>
+          </a><!-- /burger-icon -->
+        </div><!-- /navigation-header -->
+        <ul class="navbar navigation-nav" id="navbar">
+          <li class="active"><a class="" href="#">Trang chủ</a></li>
+          <li class=""><a class="" href="#">Giới thiệu</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#">Ngành học</a>
+            <ul>
+              <li><a href="#">Dropdown link 1</a></li>
+              <li><a href="#">Dropdown link 2</a></li>
+            </ul>
+          </li>
+          <li class=""><a class="" href="#">Lịch khai giảng</a></li>
+          <li class=""><a class="" href="#">Đăng ký</a></li>
+          <li class=""><a class="" href="#">Tin tức</a></li>
+        </ul>
+        <!-- Mở Modal -->
+        <button id="myBtn">Đăng ký tư vấn</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <p>Để lại thông tin</p>
+            <div id="getfly-optin-form-iframe-1695004483372"></div>
+            <script
+              type="text/javascript"> (function () { var r = window.document.referrer != "" ? window.document.referrer : window.location.origin; var regex = /(https?:\/\/.*?)\//g; var furl = regex.exec(r); r = furl ? furl[0] : r; var f = document.createElement("iframe"); const url_string = new URLSearchParams(window.location.search); var utm_source, utm_campaign, utm_medium, utm_content, utm_term; if ((!url_string.has('utm_source') || url_string.get('utm_source') == '') && document.cookie.match(new RegExp('utm_source' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_source' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_source') != null ? "&utm_source=" + url_string.get('utm_source') : ""; } if ((!url_string.has('utm_campaign') || url_string.get('utm_campaign') == '') && document.cookie.match(new RegExp('utm_campaign' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_campaign' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_campaign') != null ? "&utm_campaign=" + url_string.get('utm_campaign') : ""; } if ((!url_string.has('utm_medium') || url_string.get('utm_medium') == '') && document.cookie.match(new RegExp('utm_medium' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_medium' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_medium') != null ? "&utm_medium=" + url_string.get('utm_medium') : ""; } if ((!url_string.has('utm_content') || url_string.get('utm_content') == '') && document.cookie.match(new RegExp('utm_content' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_content' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_content') != null ? "&utm_content=" + url_string.get('utm_content') : ""; } if ((!url_string.has('utm_term') || url_string.get('utm_term') == '') && document.cookie.match(new RegExp('utm_term' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_term' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_term') != null ? "&utm_term=" + url_string.get('utm_term') : ""; } if ((!url_string.has('utm_user') || url_string.get('utm_user') == '') && document.cookie.match(new RegExp('utm_user' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_user' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_user') != null ? "&utm_user=" + url_string.get('utm_user') : ""; } if ((!url_string.has('utm_account') || url_string.get('utm_account') == '') && document.cookie.match(new RegExp('utm_account' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_account' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_account') != null ? "&utm_account=" + url_string.get('utm_account') : ""; } r += "&full_url=" + encodeURIComponent(window.location.href); f.setAttribute("src", "https://aum.getflycrm.com/api/forms/viewform/?key=AxFWg9xmg9RGLjPsUiSwBCtbhyYTGWB3rBOtmMnxfQCEc9Draw&referrer=" + r); f.style.width = "100%"; f.style.height = "500px"; f.setAttribute("frameborder", "0"); f.setAttribute("marginheight", "0"); f.setAttribute("marginwidth", "0"); var s = document.getElementById("getfly-optin-form-iframe-1695004483372"); s.appendChild(f); })(); </script>
           </div>
         </div>
       </div>
+
+
+
+    <!-- /nav -->
+  </header>
+
+  <!-- main -->
+  <main>
+    <div class="banner-main">
+      <img src="https://dhthainguyen.edu.vn/dai_hoc_thai_nguyen.jpg" />
     </div>
+    <div class="container moving">
+      <div class="moving__title">
+        <ul role="moving__list" class="moving__list">
+          <li class="text">Lịch khai giảng tại Hà Nội: 15/10/2023</li>
+          <li class="text">Lịch khai giảng tại Hồ Chí Minh: 01/10/2023</li>
+          <li class="text">Lịch khai giảng tại Thái Nguyên: 08/10/2023</li>
+          <li class="text">Lịch khai giảng tại Đà Nẵng: 22/10/2023</li>
+        </ul>
       </div>
-      
-  <hr aria-orientation="horizontal" class="borders" />
-      <nav id="main-navbar" >
-        <div class="container"  style="display: flex; justify-content: center">
-          <!-- navigation-header when small screen -->
-          <div class="navigation-header" style="color: black;">
-            <!-- burger-icon when small screen -->
-            <a href="#" class="burger-icon toggle-navbar burger-left">
-              <span></span><span></span><span></span>
-            </a><!-- /burger-icon -->
-          </div><!-- /navigation-header -->
-          <!-- navbar-nav, main-navbar -->
-          <ul class="navbar navigation-nav" id="navbar">
-            <li class="active"><a class="" href="#">Trang chủ</a></li>
-            <li class=""><a class="" href="#">Giới thiệu</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="#">Ngành học</a>
-              <ul>
-                <li><a href="#">Dropdown link 1</a></li>
-                <li><a href="#">Dropdown link 2</a></li>
+    </div>
+    <!-- NGÀNH ĐÀO TẠO -->
+    <div class="container">
+      <div class="heading">
+        <h1 class="title-section2" style="font-weight: bold">
+          CHUYÊN NGÀNH ĐÀO TẠO
+        </h1>
+        <p class="sub-title-section2" style="font-size: 16px">
+          Đào tạo đa ngành, chương trình học tiết kiệm thời gian
+        </p>
+      </div>
+      <div class="grid colums-sm-1 colums-md-2 colums-lg-3" style="max-width: 1200px; margin: 0 auto">
+        <a class="item-item1" href="/">
+          <img alt=""
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
+            class="w-full" />
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <p>
+              Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
+              sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
+              Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
+              tin mạng
+            </p>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img class="w-full" alt=""
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75" />
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <p>
+              Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
+              sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
+              Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
+              tin mạng
+            </p>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img class="w-full" alt=""
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75" />
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <p>
+              Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
+              sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
+              Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
+              tin mạng
+            </p>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img class="w-full" alt=""
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75" />
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <p>
+              Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
+              sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
+              Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
+              tin mạng
+            </p>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img class="w-full" alt=""
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75" />
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <p>
+              Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
+              sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
+              Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
+              tin mạng
+            </p>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img class="w-full" alt=""
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75" />
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <p>
+              Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
+              sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
+              Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
+              tin mạng
+            </p>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img class="w-full" alt=""
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75" />
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <p>
+              Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
+              sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
+              Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
+              tin mạng
+            </p>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img class="w-full" alt=""
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75" />
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <p>
+              Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
+              sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
+              Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
+              tin mạng
+            </p>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img class="w-full" alt=""
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75" />
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <p>
+              Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
+              sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
+              Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
+              tin mạng
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- lỢI ÍCH -->
+    <div class="container">
+      <div class="heading">
+        <h1 class="title-section2" style="font-weight: bold">
+          BẠN NHẬN ĐƯỢC GÌ
+        </h1>
+        <p class="sub-title-section2" style="font-size: 16px">
+          Những giá trị bạn sẽ nhận được từ chương trình của Đại học Thái
+          Nguyên
+        </p>
+      </div>
+    </div>
+    <div class="backgound-color-benefit" style="width: 100%">
+      <!------------GRID------------>
+      <div class="grid colums-sm-1 colums-md-2 colums-lg-2" 
+        <a class="item-item-benefit" href="/">
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <div class="icon-main">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                  class="bi bi-house-slash" viewBox="0 0 16 16">
+                  <path
+                    d="M13.879 10.414a2.5 2.5 0 0 0-3.465 3.465l3.465-3.465Zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465Zm-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z" />
+                  <path
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z" />
+                </svg>
+              </div>
+              <p>
+                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu
+                chuyên sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật
+                máy tính, Hệ thống thông tin, Mạng máy tính và truyền thông,
+                An toàn thông tin mạng
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="item-item-benefit" href="/">
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <div class="icon-main">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                  class="bi bi-house-slash" viewBox="0 0 16 16">
+                  <path
+                    d="M13.879 10.414a2.5 2.5 0 0 0-3.465 3.465l3.465-3.465Zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465Zm-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z" />
+                  <path
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z" />
+                </svg>
+              </div>
+              <p>
+                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu
+                chuyên sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật
+                máy tính, Hệ thống thông tin, Mạng máy tính và truyền thông,
+                An toàn thông tin mạng
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="item-item-benefit" href="/">
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <div class="icon-main">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                  class="bi bi-house-slash" viewBox="0 0 16 16">
+                  <path
+                    d="M13.879 10.414a2.5 2.5 0 0 0-3.465 3.465l3.465-3.465Zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465Zm-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z" />
+                  <path
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z" />
+                </svg>
+              </div>
+              <p>
+                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu
+                chuyên sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật
+                máy tính, Hệ thống thông tin, Mạng máy tính và truyền thông,
+                An toàn thông tin mạng
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="item-item-benefit" href="/">
+          <div class="text-card">
+            <h1>Ngành công nghệ thông tin</h1>
+            <div class="icon-main">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                  class="bi bi-house-slash" viewBox="0 0 16 16">
+                  <path
+                    d="M13.879 10.414a2.5 2.5 0 0 0-3.465 3.465l3.465-3.465Zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465Zm-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z" />
+                  <path
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z" />
+                </svg>
+              </div>
+              <p>
+                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu
+                chuyên sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật
+                máy tính, Hệ thống thông tin, Mạng máy tính và truyền thông,
+                An toàn thông tin mạng
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!----------------------------->
+    </div>
+    <!----THÔNG BÁO TUYỂN SINH------>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title-section2" style="font-weight: bold">
+          THÔNG BÁO TUYỂN SINH
+        </h1>
+        <p class="sub-title-section2" style="font-size: 16px">
+          Thông báo tuyển sinh hệ từ xa Đại học Thái Nguyên 2023
+        </p>
+      </div>
+    </div>
+
+    <div class="grid colums-sm-1 colums-md-2 colums-lg-2" style="
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 48px;
+            padding-bottom: 48px;
+          ">
+      <div class="item-item-benefit" href="/" style="border: none;">
+        <section class="accordion">
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb1" checked>
+            <label for="cb1" class="tab__label">Đối tượng tuyển sinh</label>
+            <div class="tab__content">
+              <p>Người đã có bằng Cao đẳng, Đại học</p>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb2">
+            <label for="cb2" class="tab__label">Hình thức tuyển sinh</label>
+            <div class="tab__content">
+              <p>Chương trình Đào tạo từ xa của Đại học Thái Nguyên (TNU) chỉ áp dụng hình thức xét tuyển đầu vào (không
+                thi tuyển), áp dụng với mọi đối tượng học viên.</p>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb3">
+            <label for="cb3" class="tab__label">Yêu cầu</label>
+            <div class="tab__content">
+              <p>Yêu cầu pháp lý:
+                <br>Mọi công dân đang không trong thời gian truy cứu trách nhiệm hình sự.
+                <br>Yêu cầu thiết bị học tập:
+                <br>Với hơn 90% nội dung học tập được thực hiện qua mạng internet. Phần lớn nội dung học tập có thể thực
+                hiện trên thiết bị di động nhưng việc làm bài tập một số môn học có thể phải sử dụng máy tính để bàn
+                hoặc máy tính xách tay. Vì vậy người học cần đảm bảo các điều kiện tối thiểu sau:
+                <br>Máy tính để bàn/máy tính xách tay.
+                <br>Đường truyền internet ổn định.
+              </p>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb4">
+            <label for="cb4" class="tab__label">Lịch khai giảng</label>
+            <div class="tab__content" style="color: black;">
+              <ul>Trạm tuyển sinh Đại học Thái Nguyên:
+                <li>Lịch khai giảng tại Hà Nội: 15/10/2023</li>
+                <li>Lịch khai giảng tại Hồ Chí Minh: 01/10/2023</li>
+                <li>Lịch khai giảng tại Thái Nguyên: 08/10/2023</li>
+                <li>Lịch khai giảng tại Đà Nẵng: 22/10/2023</li>
               </ul>
-            </li>
-            <li class=""><a class="" href="#">Lịch khai giảng</a></li>
-            <li class=""><a class="" href="#">Đăng ký</a></li>
-            <li class=""><a class="" href="#">Tin tức</a></li>
-          </ul><!-- /navbar-nav -->
-          <!-- <div class="button-container">
-            <button id="button-main" class="responsive-button" style="font-family: first-font;">Đăng ký tư vấn</button>
-          </div> -->
-
-
-          <!-- Mở Modal -->
-          <button id="myBtn">Đăng ký tư vấn</button>
-
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Để lại thông tin</p>
-      <div id="getfly-optin-form-iframe-1695004483372"></div> <script type="text/javascript"> (function(){ var r = window.document.referrer != ""? window.document.referrer: window.location.origin; var regex = /(https?:\/\/.*?)\//g; var furl = regex.exec(r); r = furl ? furl[0] : r; var f = document.createElement("iframe"); const url_string = new URLSearchParams(window.location.search); var utm_source, utm_campaign, utm_medium, utm_content, utm_term; if((!url_string.has('utm_source') || url_string.get('utm_source') == '') && document.cookie.match(new RegExp('utm_source' + '=([^;]+)')) != null){ r+= "&" +document.cookie.match(new RegExp('utm_source' + '=([^;]+)'))[0]; } else { r+= url_string.get('utm_source') != null ? "&utm_source=" + url_string.get('utm_source') : "";} if((!url_string.has('utm_campaign') || url_string.get('utm_campaign') == '') && document.cookie.match(new RegExp('utm_campaign' + '=([^;]+)')) != null){ r+= "&" +document.cookie.match(new RegExp('utm_campaign' + '=([^;]+)'))[0]; } else { r+= url_string.get('utm_campaign') != null ? "&utm_campaign=" + url_string.get('utm_campaign') : "";} if((!url_string.has('utm_medium') || url_string.get('utm_medium') == '') && document.cookie.match(new RegExp('utm_medium' + '=([^;]+)')) != null){ r+= "&" +document.cookie.match(new RegExp('utm_medium' + '=([^;]+)'))[0]; } else { r+= url_string.get('utm_medium') != null ? "&utm_medium=" + url_string.get('utm_medium') : "";} if((!url_string.has('utm_content') || url_string.get('utm_content') == '') && document.cookie.match(new RegExp('utm_content' + '=([^;]+)')) != null){ r+= "&" +document.cookie.match(new RegExp('utm_content' + '=([^;]+)'))[0]; } else { r+= url_string.get('utm_content') != null ? "&utm_content=" + url_string.get('utm_content') : "";} if((!url_string.has('utm_term') || url_string.get('utm_term') == '') && document.cookie.match(new RegExp('utm_term' + '=([^;]+)')) != null){ r+= "&" +document.cookie.match(new RegExp('utm_term' + '=([^;]+)'))[0]; } else { r+= url_string.get('utm_term') != null ? "&utm_term=" + url_string.get('utm_term') : "";} if((!url_string.has('utm_user') || url_string.get('utm_user') == '') && document.cookie.match(new RegExp('utm_user' + '=([^;]+)')) != null){ r+= "&" +document.cookie.match(new RegExp('utm_user' + '=([^;]+)'))[0]; } else { r+= url_string.get('utm_user') != null ? "&utm_user=" + url_string.get('utm_user') : "";} if((!url_string.has('utm_account') || url_string.get('utm_account') == '') && document.cookie.match(new RegExp('utm_account' + '=([^;]+)')) != null){ r+= "&" +document.cookie.match(new RegExp('utm_account' + '=([^;]+)'))[0]; } else { r+= url_string.get('utm_account') != null ? "&utm_account=" + url_string.get('utm_account') : "";} r+="&full_url="+encodeURIComponent(window.location.href); f.setAttribute("src", "https://aum.getflycrm.com/api/forms/viewform/?key=AxFWg9xmg9RGLjPsUiSwBCtbhyYTGWB3rBOtmMnxfQCEc9Draw&referrer="+r); f.style.width = "100%";f.style.height = "500px";f.setAttribute("frameborder","0");f.setAttribute("marginheight","0"); f.setAttribute("marginwidth","0");var s = document.getElementById("getfly-optin-form-iframe-1695004483372");s.appendChild(f); })(); </script>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb5" checked>
+            <label for="cb5" class="tab__label">Nơi tiếp nhận hồ sơ</label>
+            <div class="tab__content">
+              <ul>Trạm tuyển sinh Đại học Thái Nguyên:
+                <li>Hà Nội: Số 116 Trần Vỹ, Mai Dịch, Cầu Giấy, Hà Nội</li>
+                <li>Hồ Chí Minh: Số 91 Ký Con, phường Nguễn Thái Bình, Quận 1, Hồ Chí Minh</li>
+                <li>Hotline: 0914.709.118</li>
+                <li>Email: daihoctructuyen@tnu.edu.vn3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb6" checked>
+            <label for="cb6" class="tab__label">Văn bằng sau tốt nghiệp</label>
+            <div class="tab__content">
+              <ul>Trạm tuyển sinh Đại học Thái Nguyên:
+                <li>Cấp bằng Cử nhân Đại học Thái Nguyên.</li>
+                <li>Có thể học lên các bậc học cao hơn như Thạc sỹ, Tiến sỹ, thi công chức theo đúng quy định của nhà
+                  nước…</li>
+                <li>Văn bằng do Đại học do Đại học Thái Nguyên cấp, được Bộ GD&ĐT công nhận.</li>
+                <li>Văn bằng tốt nghiệp có giá trị tương đương bằng “CHÍNH QUY” và không còn ghi hình thức đào tạo là
+                  “TỪ XA”.</li>
+                <li>Bằng cấp được Bộ GD&ĐT công nhận, có giá trị sử dụng suốt đời trên phạm vi toàn quốc.</li>
+                <li>Học viên tốt nghiệp được đăng ký dự thi ở các bậc học cao hơn.</li>
+                <li>Có thể học lên các bậc học cao hơn như Thạc sỹ, Tiến sỹ, thi công chức theo đúng quy định của nhà
+                  nước…</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="college-degree" href="/">
+        <img class="w-full" alt="Bằng đại học"
+          src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fphoi-bang-dh-thai-nguyen.jpg?url=%2Fphoi-bang-dh-thai-nguyen.jpg&w=640&q=75">
+        <div class="sub-college-degree">
+          <p>
+            Phôi bằng Đại học Thái Nguyên
+          </p>
+        </div>
+      </div>
     </div>
-
-  </div>
-      </nav>
-      
-
-
-<!-- /nav -->
-    </header><!-- /header -->
-    <script>
-      // Khai báo biến modal và gán biến để lấy phương thức
-      var modal = document.getElementById("myModal");
-      
-      // Gán biến btn với nút mở modal
-      var btn = document.getElementById("myBtn");
-      
-      // Gán biển span khi đóng moadal
-      var span = document.getElementsByClassName("close")[0];
-      
-      // Bắt sự kiện click btn mở modal
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      
-      // Bắt sự kiện click vào <span> (x), đóng modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      
-      // Bắt sự kiện khi click vào 1 nơi bất kỳ trên màn hình, đóng modal
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      </script>
-      
-      
-
-
-
-    <main>
-      <div class="banner-main">
-        <img src="https://dhthainguyen.edu.vn/dai_hoc_thai_nguyen.jpg" />
-      </div>
-      <div class="container-moving">
-        <div class="moving-title">
-          <ul role="list" class="list-items">
-            <li class="text">Lịch khai giảng tại Hà Nội: 15/10/2023</li>
-            <li class="text">Lịch khai giảng tại Hồ Chí Minh: 01/10/2023</li>
-            <li class="text">Lịch khai giảng tại Thái Nguyên: 08/10/2023</li>
-            <li class="text">Lịch khai giảng tại Đà Nẵng: 22/10/2023</li>
-          </ul>
-        </div>
-      </div>
-      <!-- NGÀNH ĐÀO TẠO -->
+    <!-- HỖ TRỢ CỦA CHÚNG TÔI -->
+    <div class="backgound-color-benefit" style="width: 100%">
       <div class="container">
         <div class="heading">
           <h1 class="title-section2" style="font-weight: bold">
-            CHUYÊN NGÀNH ĐÀO TẠO
+            HỖ TRỢ CỦA CHÚNG TÔI
           </h1>
           <p class="sub-title-section2" style="font-size: 16px">
-            Đào tạo đa ngành, chương trình học tiết kiệm thời gian
-          </p>
-        </div>
-        <div
-          class="grid colums-sm-1 colums-md-2 colums-lg-3"
-          style="max-width: 1200px; margin: 0 auto"
-        >
-                <a class="item-item1" href="/">
-            <img
-              alt=""
-              src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
-              class="w-full"
-            />
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <p>
-                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
-                sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
-                Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
-                tin mạng
-              </p>
-            </div>
-          </a>
-                <a class="item-item1" href="/">
-            <img
-              class="w-full"
-              alt=""
-              src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
-            />
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <p>
-                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
-                sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
-                Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
-                tin mạng
-              </p>
-            </div>
-          </a>
-                <a class="item-item1" href="/">
-            <img
-              class="w-full"
-              alt=""
-              src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
-            />
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <p>
-                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
-                sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
-                Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
-                tin mạng
-              </p>
-            </div>
-          </a>
-                <a class="item-item1" href="/">
-            <img
-              class="w-full"
-              alt=""
-              src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
-            />
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <p>
-                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
-                sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
-                Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
-                tin mạng
-              </p>
-            </div>
-          </a>
-                <a class="item-item1" href="/">
-            <img
-              class="w-full"
-              alt=""
-              src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
-            />
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <p>
-                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
-                sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
-                Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
-                tin mạng
-              </p>
-            </div>
-          </a>
-                <a class="item-item1" href="/">
-            <img
-              class="w-full"
-              alt=""
-              src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
-            />
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <p>
-                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
-                sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
-                Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
-                tin mạng
-              </p>
-            </div>
-          </a>
-                <a class="item-item1" href="/">
-            <img
-              class="w-full"
-              alt=""
-              src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
-            />
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <p>
-                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
-                sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
-                Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
-                tin mạng
-              </p>
-            </div>
-          </a>
-                <a class="item-item1" href="/">
-            <img
-              class="w-full"
-              alt=""
-              src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
-            />
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <p>
-                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
-                sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
-                Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
-                tin mạng
-              </p>
-            </div>
-          </a>
-                <a class="item-item1" href="/">
-            <img
-              class="w-full"
-              alt=""
-              src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fcong-nghe-thong-tin.png?url=%2Fcong-nghe-thong-tin.png&w=640&q=75"
-            />
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <p>
-                Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu chuyên
-                sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật máy tính,
-                Hệ thống thông tin, Mạng máy tính và truyền thông, An toàn thông
-                tin mạng
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- lỢI ÍCH -->
-      <div class="container">
-        <div class="heading">
-          <h1 class="title-section2" style="font-weight: bold">
-            BẠN NHẬN ĐƯỢC GÌ
-          </h1>
-          <p class="sub-title-section2" style="font-size: 16px">
-            Những giá trị bạn sẽ nhận được từ chương trình của Đại học Thái
-            Nguyên
+            Đại học Thái Nguyên hỗ trợ bạn nhiều lợi ích
           </p>
         </div>
       </div>
-      <div class="backgound-color-benefit" style="width: 100%">
-        <!------------GRID------------>
-        <div
-          class="grid colums-sm-1 colums-md-2 colums-lg-2"
-          style="
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 48px;
-            padding-bottom: 48px;
-          "
-        >
-          <a class="item-item-benefit" href="/">
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <div class="icon-main">
-                <div class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="100"
-                    height="100"
-                    fill="currentColor"
-                    class="bi bi-house-slash"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M13.879 10.414a2.5 2.5 0 0 0-3.465 3.465l3.465-3.465Zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465Zm-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z"
-                    />
-                    <path
-                      d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z"
-                    />
-                  </svg>
-                </div>
-                <p>
-                  Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu
-                  chuyên sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật
-                  máy tính, Hệ thống thông tin, Mạng máy tính và truyền thông,
-                  An toàn thông tin mạng
-                </p>
-              </div>
-            </div>
-          </a>
-          <a class="item-item-benefit" href="/">
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <div class="icon-main">
-                <div class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="100"
-                    height="100"
-                    fill="currentColor"
-                    class="bi bi-house-slash"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M13.879 10.414a2.5 2.5 0 0 0-3.465 3.465l3.465-3.465Zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465Zm-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z"
-                    />
-                    <path
-                      d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z"
-                    />
-                  </svg>
-                </div>
-                <p>
-                  Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu
-                  chuyên sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật
-                  máy tính, Hệ thống thông tin, Mạng máy tính và truyền thông,
-                  An toàn thông tin mạng
-                </p>
-              </div>
-            </div>
-          </a>
-          <a class="item-item-benefit" href="/">
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <div class="icon-main">
-                <div class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="100"
-                    height="100"
-                    fill="currentColor"
-                    class="bi bi-house-slash"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M13.879 10.414a2.5 2.5 0 0 0-3.465 3.465l3.465-3.465Zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465Zm-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z"
-                    />
-                    <path
-                      d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z"
-                    />
-                  </svg>
-                </div>
-                <p>
-                  Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu
-                  chuyên sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật
-                  máy tính, Hệ thống thông tin, Mạng máy tính và truyền thông,
-                  An toàn thông tin mạng
-                </p>
-              </div>
-            </div>
-          </a>
-          <a class="item-item-benefit" href="/">
-            <div class="text-card">
-              <h1>Ngành công nghệ thông tin</h1>
-              <div class="icon-main">
-                <div class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="100"
-                    height="100"
-                    fill="currentColor"
-                    class="bi bi-house-slash"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M13.879 10.414a2.5 2.5 0 0 0-3.465 3.465l3.465-3.465Zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465Zm-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z"
-                    />
-                    <path
-                      d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z"
-                    />
-                  </svg>
-                </div>
-                <p>
-                  Học ngành Công nghệ thông tin sinh viên có thể nghiên cứu
-                  chuyên sâu về Khoa học máy tính, Công nghệ phần mềm, Kỹ thuật
-                  máy tính, Hệ thống thông tin, Mạng máy tính và truyền thông,
-                  An toàn thông tin mạng
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!----------------------------->
-      </div>
-      <!----THÔNG BÁO TUYỂN SINH------>
-      <div class="container">
-        <div class="heading">
-          <h1 class="title-section2" style="font-weight: bold">
-            THÔNG BÁO TUYỂN SINH
-          </h1>
-          <p class="sub-title-section2" style="font-size: 16px">
-            Thông báo tuyển sinh hệ từ xa Đại học Thái Nguyên 2023
-          </p>
-        </div>
-      </div>
-      
-      <div
-          class="grid colums-sm-1 colums-md-2 colums-lg-2"
-          style="
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 48px;
-            padding-bottom: 48px;
-          "
-        >
-          <div class="item-item-benefit" href="/" style="border: none;">
-            <section class="accordion">
-              <div class="tab">
-                <input type="checkbox" name="accordion-1" id="cb1" checked>
-                <label for="cb1" class="tab__label">Đối tượng tuyển sinh</label>
-                <div class="tab__content">
-                  <p>Người đã có bằng Cao đẳng, Đại học</p>
-                </div>
-              </div>
-              <div class="tab">
-                <input type="checkbox" name="accordion-1" id="cb2">
-                <label for="cb2" class="tab__label">Hình thức tuyển sinh</label>
-                <div class="tab__content">
-                  <p>Chương trình Đào tạo từ xa của Đại học Thái Nguyên (TNU) chỉ áp dụng hình thức xét tuyển đầu vào (không thi tuyển), áp dụng với mọi đối tượng học viên.</p>
-                </div>
-              </div>
-              <div class="tab">
-                <input type="checkbox" name="accordion-1" id="cb3">
-                <label for="cb3" class="tab__label">Yêu cầu</label>
-                <div class="tab__content">
-                  <p>Yêu cầu pháp lý: 
-                    <br>Mọi công dân đang không trong thời gian truy cứu trách nhiệm hình sự.
-                    <br>Yêu cầu thiết bị học tập:
-                    <br>Với hơn 90% nội dung học tập được thực hiện qua mạng internet. Phần lớn nội dung học tập có thể thực hiện trên thiết bị di động nhưng việc làm bài tập một số môn học có thể phải sử dụng máy tính để bàn hoặc máy tính xách tay. Vì vậy người học cần đảm bảo các điều kiện tối thiểu sau:
-                    <br>Máy tính để bàn/máy tính xách tay.
-                    <br>Đường truyền internet ổn định.</p>
-                </div>
-              </div>
-              <div class="tab">
-                <input type="checkbox" name="accordion-1" id="cb4">
-                <label for="cb4" class="tab__label">Lịch khai giảng</label>
-                <div class="tab__content"style="color: black;">
-                    <ul>Trạm tuyển sinh Đại học Thái Nguyên:
-                        <li>Lịch khai giảng tại Hà Nội: 15/10/2023</li>
-                        <li>Lịch khai giảng tại Hồ Chí Minh: 01/10/2023</li>
-                        <li>Lịch khai giảng tại Thái Nguyên: 08/10/2023</li>
-                        <li>Lịch khai giảng tại Đà Nẵng: 22/10/2023</li>
-                    </ul>
-                </div>
-              </div>
-              <div class="tab">
-                <input type="checkbox" name="accordion-1" id="cb5" checked>
-                <label for="cb5" class="tab__label">Nơi tiếp nhận hồ sơ</label>
-                <div class="tab__content">
-                    <ul>Trạm tuyển sinh Đại học Thái Nguyên:
-                        <li>Hà Nội: Số 116 Trần Vỹ, Mai Dịch, Cầu Giấy, Hà Nội</li>
-                        <li>Hồ Chí Minh: Số 91 Ký Con, phường Nguễn Thái Bình, Quận 1, Hồ Chí Minh</li>
-                        <li>Hotline: 0914.709.118</li>
-                        <li>Email: daihoctructuyen@tnu.edu.vn3</li>
-                    </ul>
-                </div>
-              </div>
-              <div class="tab">
-                <input type="checkbox" name="accordion-1" id="cb6" checked>
-                <label for="cb6" class="tab__label">Văn bằng sau tốt nghiệp</label>
-                <div class="tab__content">
-                    <ul>Trạm tuyển sinh Đại học Thái Nguyên:
-                      <li>Cấp bằng Cử nhân Đại học Thái Nguyên.</li>
-                      <li>Có thể học lên các bậc học cao hơn như Thạc sỹ, Tiến sỹ, thi công chức theo đúng quy định của nhà nước…</li>
-                      <li>Văn bằng do Đại học do Đại học Thái Nguyên cấp, được Bộ GD&ĐT công nhận.</li>
-                      <li>Văn bằng tốt nghiệp có giá trị tương đương bằng “CHÍNH QUY” và không còn ghi hình thức đào tạo là “TỪ XA”.</li>
-                      <li>Bằng cấp được Bộ GD&ĐT công nhận, có giá trị sử dụng suốt đời trên phạm vi toàn quốc.</li>
-                      <li>Học viên tốt nghiệp được đăng ký dự thi ở các bậc học cao hơn.</li>
-                      <li>Có thể học lên các bậc học cao hơn như Thạc sỹ, Tiến sỹ, thi công chức theo đúng quy định của nhà nước…</li>
-                    </ul>
-                </div>
-              </div>
-            </section>
-          </div>
-          <div class="college-degree" href="/">
-              <img class="w-full" alt="Bằng đại học" src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fphoi-bang-dh-thai-nguyen.jpg?url=%2Fphoi-bang-dh-thai-nguyen.jpg&w=640&q=75">
-              <div class="sub-college-degree">
-                <p>
-                  Phôi bằng Đại học Thái Nguyên
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- HỖ TRỢ CỦA CHÚNG TÔI -->
-          <div class="backgound-color-benefit" style="width: 100%">
-            <div class="container">
-              <div class="heading">
-                <h1 class="title-section2" style="font-weight: bold">
-                  HỖ TRỢ CỦA CHÚNG TÔI
-                </h1>
-                <p class="sub-title-section2" style="font-size: 16px">
-                  Đại học Thái Nguyên hỗ trợ bạn nhiều lợi ích
-                </p>
-              </div>
-            </div>
-            <div
-                class="grid colums-sm-1 colums-md-2 colums-lg-2"
-                style="
+      <div class="grid colums-sm-1 colums-md-2 colums-lg-2" style="
                   max-width: 1200px;
                   margin: 0 auto;
                   padding-top: 48px;
                   padding-bottom: 48px;
-                "
-              >
-  
-              <div class="college-degree" href="/">
-                <img class="w-full" alt="Hỗ trợ" src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fsupport.png?url=%2Fsupport.png&w=640&q=75">
-                <div class="sub-college-degree">
-                  <p>
-                    Hỗ trợ - Đại học Thái Nguyên
-                  </p>
-                </div>
-              </div>
-                <div class="item-item-benefit" href="/" style="border: none;">
-                  <section class="accordion">
-                    <div class="tab">
-                      <input type="checkbox" name="accordion-1" id="tl1" checked>
-                      <label for="tl1" class="tab__label">Sở hữu Bằng Đại học uy tín</label>
-                      <div class="tab__content">
-                        <p>Bằng Cử nhân không ghi hình thức đào tạo và được Bộ Giáo dục công nhận, Có giá trị sử dụng trọn đời</p>
-                      </div>
-                    </div>
-                    <div class="tab">
-                      <input type="checkbox" name="accordion-1" id="tl2">
-                      <label for="tl2" class="tab__label">Thời gian đào tạo</label>
-                      <div class="tab__content">
-                        <p>Thời gian đào tạo tùy vào đối tượng từ 2-2,5 năm. Người học có thể rút ngắn thời gian học tập theo quy chế đào tạo</p>
-                      </div>
-                    </div>
-                    <div class="tab">
-                      <input type="checkbox" name="accordion-1" id="tl3">
-                      <label for="tl3" class="tab__label">Kho học liệu hoàn toàn miễn phí</label>
-                      <div class="tab__content">
-                        <p>Tài liệu học tập đa Phương tiện (video, slide, script,...), giáo trình do Đại học Thái Nguyên biên soạn</p>
-                      </div>
-                    </div>
-                    <!--  -->
-                  </section>
-                </div>
-              </div>
+                ">
+
+        <div class="college-degree" href="/">
+          <img class="w-full" alt="Hỗ trợ"
+            src="https://dhthainguyen.edu.vn/_ipx/w_640,q_75/%2Fsupport.png?url=%2Fsupport.png&w=640&q=75">
+          <div class="sub-college-degree">
+            <p>
+              Hỗ trợ - Đại học Thái Nguyên
+            </p>
           </div>
-           <!-- NHỮNG CON SỐ ẤN TƯỢNG -->
-          <div class="backgound-color-number" style="width: 100%">
-            <div class="container">
-              <div class="heading">
-                <h1 class="title-section2" style="font-weight: bold; color: #fff;" >
-                  NHỮNG CON SỐ ẤN TƯỢNG
-                </h1>
-                <p class="sub-title-section2" style="font-size: 16px; color: #fff;">
-                  Cùng xem những con số ấn tượng của chúng tôi trong suốt thời gian vừa qua
+        </div>
+        <div class="item-item-benefit" href="/" style="border: none;">
+          <section class="accordion">
+            <div class="tab">
+              <input type="checkbox" name="accordion-1" id="tl1" checked>
+              <label for="tl1" class="tab__label">Sở hữu Bằng Đại học uy tín</label>
+              <div class="tab__content">
+                <p>Bằng Cử nhân không ghi hình thức đào tạo và được Bộ Giáo dục công nhận, Có giá trị sử dụng trọn đời
                 </p>
               </div>
-              <div class="counter-number">
-                <div class="css-counter-number">
-                  <span class="num" data-val="9">000</span>
-                  <span class="text">Ngành học trực tuyến</span>
-                </div>
-  
-                <div class="css-counter-number">
-                  <span class="num" data-val="2000+">000</span>
-                  <span class="text">Khóa học</span>
-                </div>
-  
-                <div class="css-counter-number">
-                  <span class="num" data-val="340">000</span>
-                  <span class="text">Sinh viên theo học</span>
-                </div>
-  
-                <div class="css-counter-number">
-                  <span class="num" data-val="340">000</span>
-                  <span class="text">Học viên có việc làm</span>
-                </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-1" id="tl2">
+              <label for="tl2" class="tab__label">Thời gian đào tạo</label>
+              <div class="tab__content">
+                <p>Thời gian đào tạo tùy vào đối tượng từ 2-2,5 năm. Người học có thể rút ngắn thời gian học tập theo
+                  quy chế đào tạo</p>
               </div>
             </div>
-            <script>
-              let valueDisplays = document.querySelectorAll(".num"); //Lấy gtri các ptu nhúng vào nodeList
-              let interval = 300; // biến tính bằng mili giây
-              valueDisplays.forEach((valueDisplay) => {
-                let startValue = 0;
-                let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-                let duration = Math.floor(interval / endValue); //duration tính toán thời gian giữa mỗi bước tăng giá trị
-                let counter = setInterval(function () {
-                  startValue += 1;
-                  valueDisplay.textContent = startValue;
-                  if (startValue == endValue) {
-                    clearInterval(counter);
-                  }
-                }, duration);
-            });
-            </script>
-              
-            
-            
-          <!-- NHẬN XÉT CỦA HỌC VIÊN -->
-          </div>
-          <div class="container">
-            <div class="heading">
-              <h1 class="title-section2" style="font-weight: bold">
-                ĐÁNH GIÁ CỦA HỌC VIÊN
-              </h1>
-              <p class="sub-title-section2" style="font-size: 16px">
-                Cùng lắng nghe những đánh giá của học viên đã tốt nghiệp hệ đào tạo từ xa tại Đại học Thái Nguyên
-              </p>
+            <div class="tab">
+              <input type="checkbox" name="accordion-1" id="tl3">
+              <label for="tl3" class="tab__label">Kho học liệu hoàn toàn miễn phí</label>
+              <div class="tab__content">
+                <p>Tài liệu học tập đa Phương tiện (video, slide, script,...), giáo trình do Đại học Thái Nguyên biên
+                  soạn</p>
+              </div>
             </div>
+            <!--  -->
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- NHỮNG CON SỐ ẤN TƯỢNG -->
+    <div class="backgound-color-number" style="width: 100%">
+      <div class="container">
+        <div class="heading">
+          <h1 class="title-section2" style="font-weight: bold; color: #fff;">
+            NHỮNG CON SỐ ẤN TƯỢNG
+          </h1>
+          <p class="sub-title-section2" style="font-size: 16px; color: #fff;">
+            Cùng xem những con số ấn tượng của chúng tôi trong suốt thời gian vừa qua
+          </p>
+        </div>
+        <div class="counter-number">
+          <div class="css-counter-number">
+            <span class="num" data-val="9">000</span>
+            <span class="text">Ngành học trực tuyến</span>
           </div>
-          <div class="backgound-color-benefit" style="width: 100%">
-            <!------------GRID------------>
-            <div
-              class="grid colums-sm-1 colums-md-2 colums-lg-3"
-              style="
+
+          <div class="css-counter-number">
+            <span class="num" data-val="2000+">000</span>
+            <span class="text">Khóa học</span>
+          </div>
+
+          <div class="css-counter-number">
+            <span class="num" data-val="340">000</span>
+            <span class="text">Sinh viên theo học</span>
+          </div>
+
+          <div class="css-counter-number">
+            <span class="num" data-val="340">000</span>
+            <span class="text">Học viên có việc làm</span>
+          </div>
+        </div>
+      </div>
+      <script>
+        let valueDisplays = document.querySelectorAll(".num"); //Lấy gtri các ptu nhúng vào nodeList
+        let interval = 300; // biến tính bằng mili giây
+        valueDisplays.forEach((valueDisplay) => {
+          let startValue = 0;
+          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue); //duration tính toán thời gian giữa mỗi bước tăng giá trị
+          let counter = setInterval(function () {
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+              clearInterval(counter);
+            }
+          }, duration);
+        });
+      </script>
+
+
+
+      <!-- NHẬN XÉT CỦA HỌC VIÊN -->
+    </div>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title-section2" style="font-weight: bold">
+          ĐÁNH GIÁ CỦA HỌC VIÊN
+        </h1>
+        <p class="sub-title-section2" style="font-size: 16px">
+          Cùng lắng nghe những đánh giá của học viên đã tốt nghiệp hệ đào tạo từ xa tại Đại học Thái Nguyên
+        </p>
+      </div>
+    </div>
+    <div class="backgound-color-benefit" style="width: 100%">
+      <!------------GRID------------>
+      <div class="grid colums-sm-1 colums-md-2 colums-lg-3" style="
                 max-width: 1200px;
                 margin: 0 auto;
                 padding-top: 48px;
-              "
-            >
-              <a class="item-item-comment">
-                <div class="text-card-comment">
-                  <h1>Nguyễn Thị Trang</h1>
-                  <p>
-                    Hệ đào tạo đại học từ xa của trường giúp tôi tiết kiệm được rất nhiều thời gian và chi phí bởi vì tôi không cần phải đến tận trường để học. Tôi có thể theo dõi video bài giảng để tự học mọi lúc mọi nơi mà tôi muốn
-                  </p>
-                </div>
-              </a>
-              <a class="item-item-comment">
-                <div class="text-card-comment">
-                  <h1>Nguyễn Phương Linh</h1>
-                  <p>
-                    Học tập trực tuyến mang nhiều ưu điểm vượt trội đã làm thay đổi mạnh mẽ khả năng tự học nhằm đáp ứng chương trình học tập. Nhà trường luôn tạo điều kiện cho học viên có thể sử dụng kho tài liệu phong phú nhằm nâng cao hiệu quả học tập
-                  </p>
-                </div>
-                <!-- <div class="people-container">
+              ">
+        <a class="item-item-comment">
+          <div class="text-card-comment">
+            <h1>Nguyễn Thị Trang</h1>
+            <p>
+              Hệ đào tạo đại học từ xa của trường giúp tôi tiết kiệm được rất nhiều thời gian và chi phí bởi vì tôi
+              không cần phải đến tận trường để học. Tôi có thể theo dõi video bài giảng để tự học mọi lúc mọi nơi mà tôi
+              muốn
+            </p>
+          </div>
+        </a>
+        <a class="item-item-comment">
+          <div class="text-card-comment">
+            <h1>Nguyễn Phương Linh</h1>
+            <p>
+              Học tập trực tuyến mang nhiều ưu điểm vượt trội đã làm thay đổi mạnh mẽ khả năng tự học nhằm đáp ứng
+              chương trình học tập. Nhà trường luôn tạo điều kiện cho học viên có thể sử dụng kho tài liệu phong phú
+              nhằm nâng cao hiệu quả học tập
+            </p>
+          </div>
+          <!-- <div class="people-container">
                   <div class="people-ava">
                     <span class="circle"></span>
                   </div>
@@ -754,534 +629,541 @@
                       
                   </div>
                 </div> -->
-              </a>
-              <a class="item-item-comment">
-                <div class="text-card-comment">
-                  <h1>Phùng Văn Dũng</h1>
-                    <p>
-                      Chương trình đào tạo giúp tôi có thêm nhiều kiến thức hay. Tôi có thể nghiên cứu lại kiến thức bất kỳ lúc nào nhờ nguồn giáo trình, tài liệu phong phú và thời gian học linh động
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <!-- ------------------ -->
-              <div
-              class="grid colums-sm-1 colums-md-2 colums-lg-3"
-              style="
+        </a>
+        <a class="item-item-comment">
+          <div class="text-card-comment">
+            <h1>Phùng Văn Dũng</h1>
+            <p>
+              Chương trình đào tạo giúp tôi có thêm nhiều kiến thức hay. Tôi có thể nghiên cứu lại kiến thức bất kỳ lúc
+              nào nhờ nguồn giáo trình, tài liệu phong phú và thời gian học linh động
+            </p>
+          </div>
+      </div>
+      </a>
+      <!-- ------------------ -->
+      <div class="grid colums-sm-1 colums-md-2 colums-lg-3" style="
                 max-width: 1200px;
                 margin: 0 auto;
                 padding-bottom: 48px;
-              "
-            >
-              <a class="item-item-cmt">
-                <div class="people-container">
-                  <div class="people-ava">
-                    <span class="circle">
-                      <div role="img" aria-label="Nguyễn Thị Trang" class="name">NT</div>
-                    </span>
-                  </div>
-                  <div class="people-name">
-                    <h2>Nguyễn Thị Trang</h2>
-                    <p>Trưởng phòng kinh doanh</p>
-                  </div>
-                </div>
-              </a>
-              <a class="item-item-cmt">
-                <div class="people-container">
-                  <div class="people-ava">
-                    <span class="circle">
-                      <div role="img" aria-label="Nguyễn Thị Trang" class="name">NT</div>
-                    </span>
-                  </div>
-                  <div class="people-name">
-                      <h2>Nguyễn Thị Trang</h2>
-                      <p>Trưởng phòng kinh doanh</p>
-                  </div>
-                </div>
-              </a>
-              <a class="item-item-cmt">
-                <div class="people-container">
-                  <div class="people-ava">
-                    <span class="circle">
-                      <div role="img" aria-label="Nguyễn Thị Trang" class="name">NT</div>
-                    </span>
-                  </div>
-                  <div class="people-name">
-                    <h2>Nguyễn Thị Trang</h2>
-                    <p>Trưởng phòng kinh doanh</p>
-                  </div>
-                </div>
-              </a>
+              ">
+        <a class="item-item-cmt">
+          <div class="people-container">
+            <div class="people-ava">
+              <span class="circle">
+                <div role="img" aria-label="Nguyễn Thị Trang" class="name">NT</div>
+              </span>
             </div>
-            <!------------TUYỂN SINH--------->
-            <div class="backgound-color-apply" style="width: 100%">
-              <div class="container">
-                <div class="heading">
-                  <h1 class="title-section2" style="font-weight: bold">
-                    TUYỂN SINH
-                  </h1>
-                  <p class="sub-title-section2" style="font-size: 16px">
-                    Hệ đại học từ xa 2023
-                  </p>
-                </div>
-              </div>
-              <!------------GRID------------>
-              <div
-                class="grid colums-sm-1 colums-md-2 colums-lg-2"
-                style="
+            <div class="people-name">
+              <h2>Nguyễn Thị Trang</h2>
+              <p>Trưởng phòng kinh doanh</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-item-cmt">
+          <div class="people-container">
+            <div class="people-ava">
+              <span class="circle">
+                <div role="img" aria-label="Nguyễn Thị Trang" class="name">NT</div>
+              </span>
+            </div>
+            <div class="people-name">
+              <h2>Nguyễn Thị Trang</h2>
+              <p>Trưởng phòng kinh doanh</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-item-cmt">
+          <div class="people-container">
+            <div class="people-ava">
+              <span class="circle">
+                <div role="img" aria-label="Nguyễn Thị Trang" class="name">NT</div>
+              </span>
+            </div>
+            <div class="people-name">
+              <h2>Nguyễn Thị Trang</h2>
+              <p>Trưởng phòng kinh doanh</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------TUYỂN SINH--------->
+      <div class="backgound-color-apply" style="width: 100%">
+        <div class="container">
+          <div class="heading">
+            <h1 class="title-section2" style="font-weight: bold">
+              TUYỂN SINH
+            </h1>
+            <p class="sub-title-section2" style="font-size: 16px">
+              Hệ đại học từ xa 2023
+            </p>
+          </div>
+        </div>
+        <!------------GRID------------>
+        <div class="grid colums-sm-1 colums-md-2 colums-lg-2" style="
                   max-width: 1200px;
                   margin: 0 auto;
                   padding: 20px;
-                "
-              >
-                  <div class="css-list-text">
-                    <div class="list-text">
-                      <ul class="ul-text">
-                        <div class="li">
-                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-                            <path style="color: #ED8936; font-size:30px" d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
-                          </svg>
-                          KHÔNG phải thi đầu vào, chỉ xét tuyển hồ sơ
-                        </div>
-                        <div class="li">
-                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-                            <path style="color: #ED8936;" d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
-                          </svg>
-                          KHÔNG phải đến trường, học online mọi lúc mọi nơi
-                        </div>
-                        <div class="li">
-                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-                            <path style="color: #ED8936;" d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
-                          </svg>
-                          TIẾT KIỆM chi phí, chủ động thời gian học tập
-                        </div>
-                        <div class="li">
-                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-                            <path style="color: #ED8936;" d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
-                          </svg>
-                          Tốt nghiệp Cao đẳng hoặc Đại học
-                        </div>
-                        <div class="li">
-                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-                            <path style="color: #ED8936;" d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
-                          </svg> 
-                          BẲNG ĐỎ được Bộ GD&ĐT công nhận, có giá trị toàn quốc
-                        </div>
-                        <div class="li">
-                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-                            <path style="color: #ED8936;" d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
-                          </svg>
-                          Đủ điều kiện học lên cao học, xét bậc lương, thi công chức theo đúng quy định
-                        </div>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="form-contact">
-                      <form action="/action_page.php">
-                        <label for="fname">
-                          <div class="text-input">Họ và tên</div>
-                        </label>
-                        <input type="text" id="fname" name="firstname" placeholder="Họ Tên: *">
-                    
-                        <label for="phone">
-                          <div class="text-input">Điện thoại</div>
-                        </label>
-                        <input type="text" id="phne" name="phonenumber" placeholder="Điện thoại: *">
-
-                        <label for="email">
-                          <div class="text-input">Email</div>
-                        </label>
-                        <input type="text" id="mail" name="gmail" placeholder="vidu@mail.com">
-                    
-                        <label for="job">
-                          <div class="text-input">Ngành đăng ký học. Đại học Thái Nguyên*</div>
-                        </label>
-                        <select id="job" name="job">
-                          <option value="KT">Kế Toán</option>
-                          <option value="QTKD">Quản trị kinh doanh</option>
-                          <option value="usa">Ngôn ngữ anh</option>
-                        </select>
-                      
-                       <Div class="cssbtn"><input type="submit" value="Đăng Ký Ngay"></Div>
-                      </form>
-                  </div>
-               </div>
+                ">
+          <div class="css-list-text">
+            <div class="list-text">
+              <ul class="ul-text">
+                <div class="li">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path style="color: #ED8936; font-size:30px"
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
+                  KHÔNG phải thi đầu vào, chỉ xét tuyển hồ sơ
+                </div>
+                <div class="li">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path style="color: #ED8936;"
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
+                  KHÔNG phải đến trường, học online mọi lúc mọi nơi
+                </div>
+                <div class="li">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path style="color: #ED8936;"
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
+                  TIẾT KIỆM chi phí, chủ động thời gian học tập
+                </div>
+                <div class="li">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path style="color: #ED8936;"
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
+                  Tốt nghiệp Cao đẳng hoặc Đại học
+                </div>
+                <div class="li">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path style="color: #ED8936;"
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
+                  BẲNG ĐỎ được Bộ GD&ĐT công nhận, có giá trị toàn quốc
+                </div>
+                <div class="li">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    focusable="false" class="chakra-icon css-175mj3q" role="presentation" height="1.5em" width="1.5em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path style="color: #ED8936;"
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
+                  Đủ điều kiện học lên cao học, xét bậc lương, thi công chức theo đúng quy định
+                </div>
+              </ul>
+            </div>
           </div>
-            
-          <!-- Tin Tức-->
-          <div class="container">
-            <div class="heading">
-              <h1 class="title-section2" style="font-weight: bold">
-                TIN TỨC - THÔNG BÁO
-              </h1>
-              <p class="sub-title-section2" style="font-size: 16px">
-                Đừng vội lướt qua những tin tức và thông báo cập nhật từ chúng tôi              
+          <div class="form-contact">
+            <form action="/action_page.php">
+              <label for="fname">
+                <div class="text-input">Họ và tên</div>
+              </label>
+              <input type="text" id="fname" name="firstname" placeholder="Họ Tên: *">
+
+              <label for="phone">
+                <div class="text-input">Điện thoại</div>
+              </label>
+              <input type="text" id="phne" name="phonenumber" placeholder="Điện thoại: *">
+
+              <label for="email">
+                <div class="text-input">Email</div>
+              </label>
+              <input type="text" id="mail" name="gmail" placeholder="vidu@mail.com">
+
+              <label for="job">
+                <div class="text-input">Ngành đăng ký học. Đại học Thái Nguyên*</div>
+              </label>
+              <select id="job" name="job">
+                <option value="KT">Kế Toán</option>
+                <option value="QTKD">Quản trị kinh doanh</option>
+                <option value="usa">Ngôn ngữ anh</option>
+              </select>
+
+              <Div class="cssbtn"><input type="submit" value="Đăng Ký Ngay"></Div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tin Tức-->
+      <div class="container">
+        <div class="heading">
+          <h1 class="title-section2" style="font-weight: bold">
+            TIN TỨC - THÔNG BÁO
+          </h1>
+          <p class="sub-title-section2" style="font-size: 16px">
+            Đừng vội lướt qua những tin tức và thông báo cập nhật từ chúng tôi
+          </p>
+        </div>
+      </div>
+      <div class="grid colums-sm-1 colums-md-2 colums-lg-4" style="max-width: 1200px; margin: 0 auto">
+        <!-- new -->
+        <a class="item-item1" href="/">
+          <img alt=""
+            src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
+            class="w-full" />
+          <div class="css-news">
+            <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;">
+              <span class="btn-new">Tin tức</span>
+            </div>
+            <div class="text-card">
+              <h1>Ngành công nghệ thông tin</h1>
+              <p>
+                Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại
+                học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này.
+                Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo
+                dõi bài viết sau đây.
               </p>
             </div>
-          </div>
-          <div
-          class="grid colums-sm-1 colums-md-2 colums-lg-4"
-          style="max-width: 1200px; margin: 0 auto"
-        >
-        <!-- new -->
-          <a class="item-item1" href="/">
-            <img
-              alt=""
-              src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
-              class="w-full"
-            />
-            <div class="css-news">
-              <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;" >
-                <span class="btn-new">Tin tức</span>
-              </div>
-              <div class="text-card">
-                <h1>Ngành công nghệ thông tin</h1>
-                <p>
-                  Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này. Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo dõi bài viết sau đây.
-                </p>
-              </div>
-              <div class="admin">
-                <span class="admin-ava" style="color: #4FD1C5; ">  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg>
-                  <div class="online"></div>
-                </span>
-                
-                <div class="admin-text">
-                  <p>Admin</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="item-item1" href="/">
-            <img
-              alt=""
-              src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
-              class="w-full"
-            />
-            <div class="css-news">
-              <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;" >
-                <span class="btn-new">Tin tức</span>
-              </div>
-              <div class="text-card">
-                <h1>Ngành công nghệ thông tin</h1>
-                <p>
-                  Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này. Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo dõi bài viết sau đây.
-                </p>
-              </div>
-              <div class="admin">
-                <span class="admin-ava" style="color: #4FD1C5; ">  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg>
-                  <div class="online"></div>
-                </span>
-                
-                <div class="admin-text">
-                  <p>Admin</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="item-item1" href="/">
-            <img
-              alt=""
-              src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
-              class="w-full"
-            />
-            <div class="css-news">
-              <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;" >
-                <span class="btn-new">Tin tức</span>
-              </div>
-              <div class="text-card">
-                <h1>Ngành công nghệ thông tin</h1>
-                <p>
-                  Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này. Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo dõi bài viết sau đây.
-                </p>
-              </div>
-              <div class="admin">
-                <span class="admin-ava" style="color: #4FD1C5; ">  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg>
-                  <div class="online"></div>
-                </span>
-                
-                <div class="admin-text">
-                  <p>Admin</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="item-item1" href="/">
-            <img
-              alt=""
-              src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
-              class="w-full"
-            />
-            <div class="css-news">
-              <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;" >
-                <span class="btn-new">Tin tức</span>
-              </div>
-              <div class="text-card">
-                <h1>Ngành công nghệ thông tin</h1>
-                <p>
-                  Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này. Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo dõi bài viết sau đây.
-                </p>
-              </div>
-              <div class="admin">
-                <span class="admin-ava" style="color: #4FD1C5; ">  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg>
-                  <div class="online"></div>
-                </span>
-                
-                <div class="admin-text">
-                  <p>Admin</p>
-                </div>
-              </div>
-            </div>
-          </a>
+            <div class="admin">
+              <span class="admin-ava" style="color: #4FD1C5; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <div class="online"></div>
+              </span>
 
-        </div>
+              <div class="admin-text">
+                <p>Admin</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img alt=""
+            src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
+            class="w-full" />
+          <div class="css-news">
+            <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;">
+              <span class="btn-new">Tin tức</span>
+            </div>
+            <div class="text-card">
+              <h1>Ngành công nghệ thông tin</h1>
+              <p>
+                Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại
+                học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này.
+                Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo
+                dõi bài viết sau đây.
+              </p>
+            </div>
+            <div class="admin">
+              <span class="admin-ava" style="color: #4FD1C5; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <div class="online"></div>
+              </span>
 
-        <!-- noti -->
-        <div
-          class="grid colums-sm-1 colums-md-2 colums-lg-4"
-          style="max-width: 1200px; margin: 0 auto"
-        >
-          <a class="item-item1" href="/">
-            <img
-              alt=""
-              src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
-              class="w-full"
-            />
-            <div class="css-news">
-              <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;" >
-                <span class="btn-noti">Thông báo</span>
-              </div>
-              <div class="text-card">
-                <h1>Ngành công nghệ thông tin</h1>
-                <p>
-                  Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này. Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo dõi bài viết sau đây.
-                </p>
-              </div>
-              <div class="admin">
-                <span class="admin-ava" style="color: #4FD1C5; ">  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg>
-                  <div class="online"></div>
-                </span>
-                
-                <div class="admin-text">
-                  <p>Admin</p>
-                </div>
+              <div class="admin-text">
+                <p>Admin</p>
               </div>
             </div>
-          </a>
-          <a class="item-item1" href="/">
-            <img
-              alt=""
-              src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
-              class="w-full"
-            />
-            <div class="css-news">
-              <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;" >
-                <span class="btn-noti">Thông báo</span>
-              </div>
-              <div class="text-card">
-                <h1>Ngành công nghệ thông tin</h1>
-                <p>
-                  Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này. Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo dõi bài viết sau đây.
-                </p>
-              </div>
-              <div class="admin">
-                <span class="admin-ava" style="color: #4FD1C5; ">  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg>
-                  <div class="online"></div>
-                </span>
-                
-                <div class="admin-text">
-                  <p>Admin</p>
-                </div>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img alt=""
+            src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
+            class="w-full" />
+          <div class="css-news">
+            <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;">
+              <span class="btn-new">Tin tức</span>
+            </div>
+            <div class="text-card">
+              <h1>Ngành công nghệ thông tin</h1>
+              <p>
+                Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại
+                học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này.
+                Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo
+                dõi bài viết sau đây.
+              </p>
+            </div>
+            <div class="admin">
+              <span class="admin-ava" style="color: #4FD1C5; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <div class="online"></div>
+              </span>
+
+              <div class="admin-text">
+                <p>Admin</p>
               </div>
             </div>
-          </a>
-          <a class="item-item1" href="/">
-            <img
-              alt=""
-              src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
-              class="w-full"
-            />
-            <div class="css-news">
-              <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;" >
-                <span class="btn-noti">Thông báo</span>
-              </div>
-              <div class="text-card">
-                <h1>Ngành công nghệ thông tin</h1>
-                <p>
-                  Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này. Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo dõi bài viết sau đây.
-                </p>
-              </div>
-              <div class="admin">
-                <span class="admin-ava" style="color: #4FD1C5; ">  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg>
-                  <div class="online"></div>
-                </span>
-                
-                <div class="admin-text">
-                  <p>Admin</p>
-                </div>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img alt=""
+            src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
+            class="w-full" />
+          <div class="css-news">
+            <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;">
+              <span class="btn-new">Tin tức</span>
+            </div>
+            <div class="text-card">
+              <h1>Ngành công nghệ thông tin</h1>
+              <p>
+                Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại
+                học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này.
+                Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo
+                dõi bài viết sau đây.
+              </p>
+            </div>
+            <div class="admin">
+              <span class="admin-ava" style="color: #4FD1C5; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <div class="online"></div>
+              </span>
+
+              <div class="admin-text">
+                <p>Admin</p>
               </div>
             </div>
-          </a>
-          <a class="item-item1" href="/">
-            <img
-              alt=""
-              src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
-              class="w-full"
-            />
-            <div class="css-news">
-              <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;" >
-                <span class="btn-noti">Thông báo</span>
-              </div>
-              <div class="text-card">
-                <h1>Ngành công nghệ thông tin</h1>
-                <p>
-                  Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này. Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo dõi bài viết sau đây.
-                </p>
-              </div>
-              <div class="admin">
-                <span class="admin-ava" style="color: #4FD1C5; ">  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg>
-                  <div class="online"></div>
-                </span>
-                
-                <div class="admin-text">
-                  <p>Admin</p>
-                </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- noti -->
+      <div class="grid colums-sm-1 colums-md-2 colums-lg-4" style="max-width: 1200px; margin: 0 auto">
+        <a class="item-item1" href="/">
+          <img alt=""
+            src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
+            class="w-full" />
+          <div class="css-news">
+            <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;">
+              <span class="btn-noti">Thông báo</span>
+            </div>
+            <div class="text-card">
+              <h1>Ngành công nghệ thông tin</h1>
+              <p>
+                Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại
+                học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này.
+                Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo
+                dõi bài viết sau đây.
+              </p>
+            </div>
+            <div class="admin">
+              <span class="admin-ava" style="color: #4FD1C5; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <div class="online"></div>
+              </span>
+
+              <div class="admin-text">
+                <p>Admin</p>
               </div>
             </div>
-          </a>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img alt=""
+            src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
+            class="w-full" />
+          <div class="css-news">
+            <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;">
+              <span class="btn-noti">Thông báo</span>
+            </div>
+            <div class="text-card">
+              <h1>Ngành công nghệ thông tin</h1>
+              <p>
+                Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại
+                học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này.
+                Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo
+                dõi bài viết sau đây.
+              </p>
+            </div>
+            <div class="admin">
+              <span class="admin-ava" style="color: #4FD1C5; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <div class="online"></div>
+              </span>
+
+              <div class="admin-text">
+                <p>Admin</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img alt=""
+            src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
+            class="w-full" />
+          <div class="css-news">
+            <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;">
+              <span class="btn-noti">Thông báo</span>
+            </div>
+            <div class="text-card">
+              <h1>Ngành công nghệ thông tin</h1>
+              <p>
+                Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại
+                học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này.
+                Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo
+                dõi bài viết sau đây.
+              </p>
+            </div>
+            <div class="admin">
+              <span class="admin-ava" style="color: #4FD1C5; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <div class="online"></div>
+              </span>
+
+              <div class="admin-text">
+                <p>Admin</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="item-item1" href="/">
+          <img alt=""
+            src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
+            class="w-full" />
+          <div class="css-news">
+            <div class="css-btn-new" style="padding-left: 20px; padding-top: 20px;">
+              <span class="btn-noti">Thông báo</span>
+            </div>
+            <div class="text-card">
+              <h1>Ngành công nghệ thông tin</h1>
+              <p>
+                Tiếng Trung đang trở nên phổ biến khi lượng người theo học ngày một đông. Hiện nay rất nhiều trường đại
+                học đã mở thêm khoa ngôn ngữ dành cho tiếng Trung. Nhờ đó đã khẳng định tầm quan trọng của ngôn ngữ này.
+                Nếu bạn đang muốn tìm hiểu về chúc ngủ ngon tiếng Trung cũng như một vài thông tin về ngôn ngữ, hãy theo
+                dõi bài viết sau đây.
+              </p>
+            </div>
+            <div class="admin">
+              <span class="admin-ava" style="color: #4FD1C5; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <div class="online"></div>
+              </span>
+
+              <div class="admin-text">
+                <p>Admin</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="more-new">
+        <a class="css-more-new" href="/" style="font-weight: bold; font-size: medium;">
+          <p>Xem tất cả</p>
+        </a>
+      </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer" style="background-color: #054659;">
+    <div class="register">
+      <h2 class="title-register">
+        Đăng ký nhận tư vấn
+      </h2>
+      <div class="form-text">
+        <input type="text" placeholder="Nhập email để đăng ký" class="form-register">
+        <div class="button-register">
+          <button type="button" class="css-button-register">Đăng ký</button>
         </div>
-        <div class="more-new">
-          <a class="css-more-new" href="/" style="font-weight: bold; font-size: medium;">
-            <p>Xem tất cả</p>
-          </a>
+      </div>
+    </div>
+    <div class="grid-footer">
+      <div class="col1">
+        <div class="grid-col1">
+          <p class="css grid-col1">Thông tin liên hệ</p>
+          <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>
+          <ul role="list" class="css ul">
+            <li class="css-0">Hà Nội: Số 116 Trần Vĩ, Phường Mai Dịch, Quận Cầu Giấy, Thành Phố Hà Nội</li>
+            <li class="css-0">Hồ Chí Minh: Số 91 Ký Con, phường Nguyễn Thái Bình, Quận 1, TP Hồ Chí Minh</li>
+          </ul>
+          <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>.
+          <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>
+          <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>
+          <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>
         </div>
-        </main>
-        <div class="footer" style="background-color: #054659;">
-          <div class="register">
-            <h2 class="title-register">
-              Đăng ký nhận tư vấn
-            </h2>
-            <div class="form-text">
-              <input type="text" placeholder="Nhập email để đăng ký" class="form-register">
-              <div class="button-register">
-                <button type="button" class="css-button-register">Đăng ký</button>
-              </div>
-            </div>
-          </div>
-          <div class="grid-footer">
-            <div class="col1">
-              <div class="grid-col1">
-                <p class="css grid-col1">Thông tin liên hệ</p>
-                <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>
-                <ul role="list" class="css ul">
-                  <li class="css-0">Hà Nội: Số 116 Trần Vĩ, Phường Mai Dịch, Quận Cầu Giấy, Thành Phố Hà Nội</li>
-                  <li class="css-0">Hồ Chí Minh: Số 91 Ký Con, phường Nguyễn Thái Bình, Quận 1, TP Hồ Chí Minh</li>
-                </ul>
-                <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>.
-                <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>
-                <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>
-                <a class="css-0" href="/#">Văn phòng tuyển sinh:</a>
-              </div>
-            </div>
-            
-            <div class="col3">
-              <p class="col3-text">Hỗ trợ</p>
-              <a class="css-0" href="/gioi-thieu">Về chúng tôi</a>
-              <a class="css-0" href="/gioi-thieu">Về chúng tôi</a>
-              <a class="css-0" href="/gioi-thieu">Về chúng tôi</a>
-              <a class="css-0" href="/gioi-thieu">Về chúng tôi</a>
-              
-            </div>
-            <div class="col4">
-              <p class="css-col4">Hợp tác tuyển sinh</p>
-              <a href="/">link</a>
-            </div>
-            <div class="col4">
-              <p class="css-col5">Mạng xã hội</p>
-              <div class="fb-tiktok">
-                <a href="/">link</a>
-                <a href="/">link</a>
-              </div>
-            </div>
-          </div>
-          <div class="copyright">
-            <div class="css-copyright">
-              <p>© 2023 Copyright by IT AUM</p>
-            </div>
-          </div>
-          
+      </div>
+
+      <div class="col3">
+        <p class="col3-text">Hỗ trợ</p>
+        <a class="css-0" href="/gioi-thieu">Về chúng tôi</a>
+        <a class="css-0" href="/gioi-thieu">Về chúng tôi</a>
+        <a class="css-0" href="/gioi-thieu">Về chúng tôi</a>
+        <a class="css-0" href="/gioi-thieu">Về chúng tôi</a>
+
+      </div>
+      <div class="col4">
+        <p class="css-col4">Hợp tác tuyển sinh</p>
+        <a href="/">link</a>
+      </div>
+      <div class="col4">
+        <p class="css-col5">Mạng xã hội</p>
+        <div class="fb-tiktok">
+          <a href="/">link</a>
+          <a href="/">link</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="css-copyright">
+        <p>© 2023 Copyright by IT AUM</p>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+  <!-- javascript -->
+  <script src="./assets/js/header.js" type="text/javascript"></script>
+  <script src="./assets/js/main.js" type="text/javascript"></script>
+  <script src="./assets/js/modal.js" type="text/javascript"></script>
   
-          
-          </div>
-              
-              
-              
-              
-              
-             
-              
-           
-          </div>
-        </div> 
-        
-          
-        
-            
+</body>
 
-
-
-
-        
-        
-       
-        
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        <script src="/HTML/dhthainguyen/myscript.js"></script>
-  </body>
 </html>
-
-
