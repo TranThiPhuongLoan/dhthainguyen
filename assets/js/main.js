@@ -74,7 +74,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 
 // Gán biển span khi đóng moadal
-var span = document.getElementByClassName("close-modal");
+var span = document.getElementByClassName("close-modal")[0];
 
 // Bắt sự kiện click btn mở modal
 btn.onclick = function () {

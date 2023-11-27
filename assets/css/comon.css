@@ -1,6 +1,6 @@
 /* Layout */
 .container {
-  max-width: 1728px;
+  /* max-width: 1728px; */
   margin: 0 auto;
   padding: 8px;
   align-items: center;

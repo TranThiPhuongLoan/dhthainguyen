@@ -8,14 +8,19 @@
   <title>Đại học Thái Nguyên</title>
 
   <!-- css -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/variables.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/font.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/moving.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/comon.css" />
 
   <!-- font -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  
   <!-- sass -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/comon.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/moving.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js" integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
@@ -27,14 +32,14 @@
 
         <div class="header__cta">
           <a class="phone" href="tel: 0914709118">
-            <svg style="color: white" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+            <svg style="color: white; " stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
               stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-13otjrl"
               height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
               </path>
             </svg>
-            <span class="phone-number" style="color: white">0914709118</span>
+            <span class="phone-number" style="color: white; font-weight: 500;">0914709118</span>
           </a>
           <a class="mail" href="mailto:daihoctructruyen@tnu.edu.vn">
             <svg style="color: white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -45,15 +50,17 @@
                 d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 4.99L4 6h16zm0 12H4V8l8 5 8-5v10z">
               </path>
             </svg>
-            <span class="mail-text" style="color: white">daihoctructuyen@tnu.edu.vn</span>
+            <span class="mail-text" style="color: white; font-weight: 500">daihoctructuyen@tnu.edu.vn</span>
           </a>
         </div>
 
         <div class="header__logo">
           <a href="/">
-            <img alt="Logo Đại học Thái Nguyên"
+            <div class="logo img">
+              <img alt="Logo Đại học Thái Nguyên"
               src="https://dhthainguyen.edu.vn/_ipx/w_96,q_75/%2Flogo-dhthainguyen.png?url=%2Flogo-dhthainguyen.png&w=96&q=75"
               width="65" height="65" />
+            </div>
             <div class="sub-logo">
               <h1 class="school-name">Đại học Thái Nguyên</h1>
               <h2 class="sub-name">Trung tâm đào tạo từ xa</h2>
@@ -62,54 +69,58 @@
         </div>
 
         <div class="header__search">
-          <button type="submit">
-            <i class="fas fa-search"></i>
-          </button>
+          <button type="button" class="header__search css-btn-search">
+            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="css-search" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+          
         </div>
 
       </div>
     </div>
    
-
     <hr aria-orientation="horizontal" class="borders" />
     
     <header id="header--bottom">
       <div class="container" >
-        <!-- navigation-header when small screen -->
-        <div class="navigation-header" style="color: black;">
-          <!-- burger-icon when small screen -->
-          <a href="#" class="burger-icon toggle-navbar burger-left">
-            <span></span><span></span><span></span>
-          </a><!-- /burger-icon -->
-        </div><!-- /navigation-header -->
-        <ul class="navbar navigation-nav" id="navbar">
-          <li class="active"><a class="" href="#">Trang chủ</a></li>
-          <li class=""><a class="" href="#">Giới thiệu</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="#">Ngành học</a>
-            <ul>
-              <li><a href="#">Dropdown link 1</a></li>
-              <li><a href="#">Dropdown link 2</a></li>
-            </ul>
-          </li>
-          <li class=""><a class="" href="#">Lịch khai giảng</a></li>
-          <li class=""><a class="" href="#">Đăng ký</a></li>
-          <li class=""><a class="" href="#">Tin tức</a></li>
-        </ul>
-        <!-- Mở Modal -->
-        <button id="myBtn">Đăng ký tư vấn</button>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <p>Để lại thông tin</p>
-            <div id="getfly-optin-form-iframe-1695004483372"></div>
-            <script
-              type="text/javascript"> (function () { var r = window.document.referrer != "" ? window.document.referrer : window.location.origin; var regex = /(https?:\/\/.*?)\//g; var furl = regex.exec(r); r = furl ? furl[0] : r; var f = document.createElement("iframe"); const url_string = new URLSearchParams(window.location.search); var utm_source, utm_campaign, utm_medium, utm_content, utm_term; if ((!url_string.has('utm_source') || url_string.get('utm_source') == '') && document.cookie.match(new RegExp('utm_source' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_source' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_source') != null ? "&utm_source=" + url_string.get('utm_source') : ""; } if ((!url_string.has('utm_campaign') || url_string.get('utm_campaign') == '') && document.cookie.match(new RegExp('utm_campaign' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_campaign' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_campaign') != null ? "&utm_campaign=" + url_string.get('utm_campaign') : ""; } if ((!url_string.has('utm_medium') || url_string.get('utm_medium') == '') && document.cookie.match(new RegExp('utm_medium' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_medium' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_medium') != null ? "&utm_medium=" + url_string.get('utm_medium') : ""; } if ((!url_string.has('utm_content') || url_string.get('utm_content') == '') && document.cookie.match(new RegExp('utm_content' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_content' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_content') != null ? "&utm_content=" + url_string.get('utm_content') : ""; } if ((!url_string.has('utm_term') || url_string.get('utm_term') == '') && document.cookie.match(new RegExp('utm_term' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_term' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_term') != null ? "&utm_term=" + url_string.get('utm_term') : ""; } if ((!url_string.has('utm_user') || url_string.get('utm_user') == '') && document.cookie.match(new RegExp('utm_user' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_user' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_user') != null ? "&utm_user=" + url_string.get('utm_user') : ""; } if ((!url_string.has('utm_account') || url_string.get('utm_account') == '') && document.cookie.match(new RegExp('utm_account' + '=([^;]+)')) != null) { r += "&" + document.cookie.match(new RegExp('utm_account' + '=([^;]+)'))[0]; } else { r += url_string.get('utm_account') != null ? "&utm_account=" + url_string.get('utm_account') : ""; } r += "&full_url=" + encodeURIComponent(window.location.href); f.setAttribute("src", "https://aum.getflycrm.com/api/forms/viewform/?key=AxFWg9xmg9RGLjPsUiSwBCtbhyYTGWB3rBOtmMnxfQCEc9Draw&referrer=" + r); f.style.width = "100%"; f.style.height = "500px"; f.setAttribute("frameborder", "0"); f.setAttribute("marginheight", "0"); f.setAttribute("marginwidth", "0"); var s = document.getElementById("getfly-optin-form-iframe-1695004483372"); s.appendChild(f); })(); </script>
+        <div class="header__bottom__menu" >
+          <!-- navigation-header when small screen -->
+          <div class="navigation-header" style="color: black;">
+            <!-- burger-icon when small screen -->
+            <a href="#" class="burger-icon toggle-navbar burger-left">
+              <span></span><span></span><span></span>
+            </a><!-- /burger-icon -->
+            
+          </div><!-- /navigation-header -->
+          <ul class="navbar navigation-nav" id="navbar">
+            <li class="active"><a class="" href="#">Trang chủ</a></li>
+            <li class=""><a class="" href="#">Giới thiệu</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#">Ngành học</a>
+              <ul>
+                <li><a href="#">Dropdown link 1</a></li>
+                <li><a href="#">Dropdown link 2</a></li>
+              </ul>
+            </li>
+            <li class=""><a class="" href="#">Lịch khai giảng</a></li>
+            <li class=""><a class="" href="#">Đăng ký</a></li>
+            <li class=""><a class="" href="#">Tin tức</a></li>
+          </ul>
+  
+          <!-- Mở Modal -->
+          <button id="myBtn">Đăng ký tư vấn</button>
+          
+          <!-- The Modal -->
+            <div id="myModal" class="modal">
+            <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <p>Để lại thông tin</p>
+                <div id="getfly-optin-form-iframe-1695004483372"></div>
+            </div>
           </div>
         </div>
-      </div>
+
+        </div>
+        
 
 
 
@@ -262,8 +273,9 @@
         </a>
       </div>
     </div>
+    
     <!-- lỢI ÍCH -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="heading">
         <h1 class="title-section2" style="font-weight: bold">
           BẠN NHẬN ĐƯỢC GÌ
@@ -275,8 +287,8 @@
       </div>
     </div>
     <div class="backgound-color-benefit" style="width: 100%">
-      <!------------GRID------------>
-      <div class="grid colums-sm-1 colums-md-2 colums-lg-2" 
+        <------------GRID------------>
+      <!-- <div class="grid colums-sm-1 colums-md-2 colums-lg-2" 
         <a class="item-item-benefit" href="/">
           <div class="text-card">
             <h1>Ngành công nghệ thông tin</h1>
@@ -366,10 +378,11 @@
           </div>
         </a>
       </div>
-      <!----------------------------->
-    </div>
+      <--------------------------->
+    <!-- </div>  --> 
+    
     <!----THÔNG BÁO TUYỂN SINH------>
-    <div class="container">
+    <!-- <div class="container">
       <div class="heading">
         <h1 class="title-section2" style="font-weight: bold">
           THÔNG BÁO TUYỂN SINH
@@ -471,9 +484,10 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
+
     <!-- HỖ TRỢ CỦA CHÚNG TÔI -->
-    <div class="backgound-color-benefit" style="width: 100%">
+    <!-- <div class="backgound-color-benefit" style="width: 100%">
       <div class="container">
         <div class="heading">
           <h1 class="title-section2" style="font-weight: bold">
@@ -526,13 +540,14 @@
                   soạn</p>
               </div>
             </div>
-            <!--  -->
-          </section>
+              -->
+          <!-- </section>
         </div>
       </div>
-    </div>
+    </div> -->
+
     <!-- NHỮNG CON SỐ ẤN TƯỢNG -->
-    <div class="backgound-color-number" style="width: 100%">
+    <!-- <div class="backgound-color-number" style="width: 100%">
       <div class="container">
         <div class="heading">
           <h1 class="title-section2" style="font-weight: bold; color: #fff;">
@@ -563,29 +578,11 @@
             <span class="text">Học viên có việc làm</span>
           </div>
         </div>
-      </div>
-      <script>
-        let valueDisplays = document.querySelectorAll(".num"); //Lấy gtri các ptu nhúng vào nodeList
-        let interval = 300; // biến tính bằng mili giây
-        valueDisplays.forEach((valueDisplay) => {
-          let startValue = 0;
-          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-          let duration = Math.floor(interval / endValue); //duration tính toán thời gian giữa mỗi bước tăng giá trị
-          let counter = setInterval(function () {
-            startValue += 1;
-            valueDisplay.textContent = startValue;
-            if (startValue == endValue) {
-              clearInterval(counter);
-            }
-          }, duration);
-        });
-      </script>
-
+      </div> -->
 
 
       <!-- NHẬN XÉT CỦA HỌC VIÊN -->
-    </div>
-    <div class="container">
+    <!-- <div class="container">
       <div class="heading">
         <h1 class="title-section2" style="font-weight: bold">
           ĐÁNH GIÁ CỦA HỌC VIÊN
@@ -596,8 +593,8 @@
       </div>
     </div>
     <div class="backgound-color-benefit" style="width: 100%">
-      <!------------GRID------------>
-      <div class="grid colums-sm-1 colums-md-2 colums-lg-3" style="
+      <----------GRID------------>
+      <!-- <div class="grid colums-sm-1 colums-md-2 colums-lg-3" style="
                 max-width: 1200px;
                 margin: 0 auto;
                 padding-top: 48px;
@@ -629,7 +626,7 @@
                       
                   </div>
                 </div> -->
-        </a>
+        <!-- </a>
         <a class="item-item-comment">
           <div class="text-card-comment">
             <h1>Phùng Văn Dũng</h1>
@@ -639,9 +636,9 @@
             </p>
           </div>
       </div>
-      </a>
+      </a>  -->
       <!-- ------------------ -->
-      <div class="grid colums-sm-1 colums-md-2 colums-lg-3" style="
+      <!-- <div class="grid colums-sm-1 colums-md-2 colums-lg-3" style="
                 max-width: 1200px;
                 margin: 0 auto;
                 padding-bottom: 48px;
@@ -685,9 +682,10 @@
             </div>
           </div>
         </a>
-      </div>
+      </div>  -->
+
       <!------------TUYỂN SINH--------->
-      <div class="backgound-color-apply" style="width: 100%">
+      <!-- <div class="backgound-color-apply" style="width: 100%">
         <div class="container">
           <div class="heading">
             <h1 class="title-section2" style="font-weight: bold">
@@ -697,9 +695,9 @@
               Hệ đại học từ xa 2023
             </p>
           </div>
-        </div>
+        </div> -->
         <!------------GRID------------>
-        <div class="grid colums-sm-1 colums-md-2 colums-lg-2" style="
+        <!-- <div class="grid colums-sm-1 colums-md-2 colums-lg-2" style="
                   max-width: 1200px;
                   margin: 0 auto;
                   padding: 20px;
@@ -800,10 +798,10 @@
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Tin Tức-->
-      <div class="container">
+      <!-- <div class="container">
         <div class="heading">
           <h1 class="title-section2" style="font-weight: bold">
             TIN TỨC - THÔNG BÁO
@@ -814,8 +812,8 @@
         </div>
       </div>
       <div class="grid colums-sm-1 colums-md-2 colums-lg-4" style="max-width: 1200px; margin: 0 auto">
-        <!-- new -->
-        <a class="item-item1" href="/">
+        < new -->
+        <!-- <a class="item-item1" href="/">
           <img alt=""
             src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
             class="w-full" />
@@ -952,10 +950,10 @@
           </div>
         </a>
 
-      </div>
+      </div> --> 
 
       <!-- noti -->
-      <div class="grid colums-sm-1 colums-md-2 colums-lg-4" style="max-width: 1200px; margin: 0 auto">
+      <!-- <div class="grid colums-sm-1 colums-md-2 colums-lg-4" style="max-width: 1200px; margin: 0 auto">
         <a class="item-item1" href="/">
           <img alt=""
             src="https://dhthainguyen.aum.edu.vn/wp-content/uploads/2023/06/nganh-tai-chinh-ngan-hang-ra-lam-gi.png"
@@ -1097,10 +1095,10 @@
         <a class="css-more-new" href="/" style="font-weight: bold; font-size: medium;">
           <p>Xem tất cả</p>
         </a>
-      </div>
+      </div> -->
   </main>
 
-  <!-- footer -->
+  <!---------------------- FOODTER------------ -->
   <footer class="footer" style="background-color: #054659;">
     <div class="register">
       <h2 class="title-register">
@@ -1137,6 +1135,7 @@
         <a class="css-0" href="/gioi-thieu">Về chúng tôi</a>
 
       </div>
+      
       <div class="col4">
         <p class="css-col4">Hợp tác tuyển sinh</p>
         <a href="/">link</a>
@@ -1154,15 +1153,14 @@
         <p>© 2023 Copyright by IT AUM</p>
       </div>
     </div>
+  </footer>  
 
-
-
-  </footer>
-
-  <!-- javascript -->
+  <!-- Javascript -->
   <script src="./assets/js/header.js" type="text/javascript"></script>
   <script src="./assets/js/main.js" type="text/javascript"></script>
   <script src="./assets/js/modal.js" type="text/javascript"></script>
+  <script src="./assets/js/counter_number.js" type="text/javascript"></script>
+  <script src="https://cdn.lordicon.com/lordicon-1.3.0.js"></script>
   
 </body>
 

@@ -1,0 +1,80 @@
+.moving {
+  width: 100%;
+  height: 60px; 
+  animation-name: example;
+  box-sizing: border-box;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  background: linear-gradient(70deg, rgb(246, 137, 32), rgb(252, 89, 52) 100%);
+  color: white;
+  overflow-x: hidden;
+}
+
+
+
+ 
+.moving__list{
+  display: flex;
+}
+
+.moving__title ul{
+  gap: 4rem;
+  padding-left: 145px;
+  color: #fff;
+  flex-shrink: 0;
+  height: 50px;
+  align-items: center;
+  animation: slide-left 30s linear infinite;
+}
+
+.moving__title p{
+    font-size: 2.5em;
+    font-weight: 100;
+    padding-left: 0.5em;
+  }
+
+.moving-title ul p {
+  font-size: 2.5em;
+  font-weight: 100;
+  padding-left: 0.5em;
+}
+@media (max-width: 480px) {
+  .moving__list .text{
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0.75em;
+
+  }
+}
+
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+
+
+}/*# sourceMappingURL=moving.css.map */
+
+
+@keyframes slide-left {
+  from, to {
+    transform: translateX(100%); /* Sửa giá trị ban đầu để đoạn text bắt đầu từ phải */
+  }
+  50% {
+    transform: translateX(-100%); /* Sửa giá trị giữa để đoạn text chạy qua trái */
+  }
+} 
+@keyframes slide-left {
+  from, to {
+    transform: translateX(100%); /* Sửa giá trị ban đầu để đoạn text bắt đầu từ phải */
+  }
+  50% {
+    transform: translateX(-100%); /* Sửa giá trị giữa để đoạn text chạy qua trái */
+  }
+}             
